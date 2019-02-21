@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,700"); /* import Montserrat font  */
 
 * {
     box-sizing: border-box;
 }
 
+/** Custom Local Font **/
+@font-face {
+  font-family: 'myFont';
+  src: url('../assets/CoolCrayon.ttf');
+}
+
 body,
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: "myFont", sans-serif;
     min-height: 100vh;
     margin: 0;
 }
@@ -64,7 +69,7 @@ img#logo {
 h1 {
     text-transform: uppercase;
     color: #535353;
-    margin-bottom: 0.2em;
+
 }
 
 p.subtitle {
@@ -98,9 +103,10 @@ p.subtitle {
 @-ms-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(9, 187, 233, 0);}}
 @keyframes pulse {to {box-shadow: 0 0 0 20px rgba(9, 187, 233, 0);}}
 
-#monitor {
+#axis {
+    width:150%;
+    height: 150%;
     animation: monitorIn 1s ease-in-out forwards; /* assign animation to monitor with 'monitorIn' as keyframe name */
-    opacity: 0;
 }
 
 .crypto-icons {
@@ -112,26 +118,42 @@ p.subtitle {
   fill: red;
 }
 
-#dash {
-    margin-top: -4%;
-    margin-left: 9%;
+#love {
+    width: 6%;
+    height: 6%;
+    margin-top: 4%;
+    margin-left: 19%;
     animation: chatblips 0.5s ease-in-out 2.7s forwards; /* assign animation to dash with 'chatblips' as keyframe name */
     opacity: 0;
     z-index: 2;
 }
 
-#eth {
-    margin-top: 9.5%;
-    margin-left: 18%;
+#disa {
+    width: 6%;
+    height: 6%;
+    margin-top: 19.5%;
+    margin-left: 25%;
     animation: chatblips 0.5s ease-in-out 1.9s forwards; /* assign animation to eth with 'chatblips' as keyframe name */
     opacity: 0;
     z-index: 2;
 }
 
-#iota {
-    margin-top: 5%;
-    margin-left: -1.5%;
+#tongue {
+    width: 6%;
+    height: 6%;
+    margin-top: 15%;
+    margin-left: 5.5%;
     animation: chatblips 0.5s ease-in-out 0.8s forwards; /* assign animation to iota with 'chatblips' as keyframe name */
+    opacity: 0;
+    z-index: 2;
+}
+
+#cool {
+    width: 6%;
+    height: 6%;
+    margin-top: 12%;
+    margin-left: 35%;
+    animation: chatblips 0.5s ease-in-out 3.5s forwards; /* assign animation to iota with 'chatblips' as keyframe name */
     opacity: 0;
     z-index: 2;
 }
