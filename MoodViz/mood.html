@@ -13,8 +13,8 @@
 </head>
 <body>
 	<div>
-		<!-- action="visualize.html" -->
-		<form onsubmit="return loadData();">
+		<!-- onsubmit="return loadData();" action="visualize.html" -->
+		<form>
 			<h2>Enter a value between 1 and 10 that maps to your mood for all the days this week</h2>
 			Monday:<br>
 			<input class="moodInput" id="mondayMood" placeholder="4"/><br><br>
@@ -30,13 +30,14 @@
 			<input class="moodInput" id="saturdayMood" placeholder="9"/><br><br>
 			Sunday:<br>
 			<input class="moodInput" id="sundayMood" placeholder="8"/><br><br>
-			<input class="cta cta--white" id="submitMood" type="submit" value="Submit">
+			<input class="cta cta--white" id="submitLine" type="button" value="Line Chart" onclick="loadData();" />
+			<input class="cta cta--white" id="submitBarButton" type="button" value="Bar Chart" onclick="loadData();" />
 			<!-- onclick="visualize.html" -->
 			<a href="" class="cta cta--white" id="clearMood">Clear</a>
 		</form>
 	</div>
 	<div>
-		<canvas id="lineChart" height="450" width="800"></canvas>
+		<canvas id="moodChartDiv" height="450" width="800"></canvas>
 	</div>
 </body>
 </html>
