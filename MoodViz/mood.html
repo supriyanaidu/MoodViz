@@ -12,33 +12,33 @@
 		<script src="scripts/chart.js" async></script>
 </head>
 <body>
-	<div>
+	<div id="container">
+    <div><h2>Rate your mood (0 - 10 ) for this week</h2></div>
 		<!-- onsubmit="return loadData();" action="visualize.html" -->
+    <div id="week">
 		<form>
-			<h2>Enter a value between 1 and 10 that maps to your mood for all the days this week</h2>
 			Monday:<br>
-			<input class="moodInput" id="mondayMood" placeholder="4"/><br><br>
+			<input class="moodInput" id="mondayMood"/><br><br>
 			Tuesday:<br>
-			<input class="moodInput" id="tuesdayMood" placeholder="3"/><br><br>
+			<input class="moodInput" id="tuesdayMood"/><br><br>
 			Wednesday:<br>
-			<input class="moodInput" id="wednesdayMood" placeholder="2"/><br><br>
+			<input class="moodInput" id="wednesdayMood"/><br><br>
 			Thursday:<br>
-			<input class="moodInput" id="thursdayMood" placeholder="5"/><br><br>
+			<input class="moodInput" id="thursdayMood"/><br><br>
 			Friday:<br>
-			<input class="moodInput" id="fridayMood" placeholder="8"/><br><br>
+			<input class="moodInput" id="fridayMood"/><br><br>
 			Saturday:<br>
-			<input class="moodInput" id="saturdayMood" placeholder="9"/><br><br>
+			<input class="moodInput" id="saturdayMood"/><br><br>
 			Sunday:<br>
-			<input class="moodInput" id="sundayMood" placeholder="8"/><br><br>
+			<input class="moodInput" id="sundayMood"/><br><br>
 			<input class="cta cta--white" id="submitLine" type="button" value="Line Chart" onclick="loadData('line');" />
 			<input class="cta cta--white" id="submitBar" type="button" value="Bar Chart" onclick="loadData('bar');" />
-			<!-- <input class="cta cta--white" id="submitScatter" type="button" value="ScatterPlot" onclick="loadData('scatter');" /> -->
-			<!-- onclick="visualize.html" -->
-			<a href="" class="cta cta--white" id="clearMood">Clear</a>
+			<input class="cta cta--white" id="clearMood" type="button" value="Clear" />
 		</form>
-	</div>
-	<div>
+  </div>
+	<div id="chart">
 		<canvas id="moodChartDiv" height="450" width="800"></canvas>
 	</div>
+  </div>
 </body>
 </html>
