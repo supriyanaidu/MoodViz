@@ -58,6 +58,8 @@ function displayLineChart(){
 		]
 	};
 	var options = {
+		// responsive : true,
+		// maintainAspectRatio: false,
 		scaleOverride : true,
 		scaleStartValue : 0,
 		scaleSteps : 10,
@@ -91,6 +93,8 @@ function displayBarChart(){
 		]
 	};
 	var options = {
+		// responsive : true,
+		// maintainAspectRatio: false,
 		scaleOverride : true,
 		scaleStartValue : 0,
 		scaleSteps : 10,
